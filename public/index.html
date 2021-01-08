@@ -28,16 +28,13 @@
     $(function () {
 
 
-        $("#btn_fetch").click(function () {
+       
 
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const l = urlParams.get('url')
-var url = l;
-    //        var url = $("#txt_url").val();
 
-          */  var oThis = $(this);
-            oThis.attr('disabled', true);*/
+            var url = $("#txt_url").val();
+
+            var oThis = $(this);
+            oThis.attr('disabled', true);
 
             $.get('video_info.php', {url: url}, function (data) {
 
@@ -72,7 +69,7 @@ var url = l;
 
         });
 
-    });
+   
 </script>
 
 </body>
