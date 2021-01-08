@@ -27,12 +27,17 @@
 <script>
     $(function () {
 
+
         $("#btn_fetch").click(function () {
 
-            var url = $("#txt_url").val();
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const l = urlParams.get('url')
+var url = l;
+    //        var url = $("#txt_url").val();
 
-            var oThis = $(this);
-            oThis.attr('disabled', true);
+          */  var oThis = $(this);
+            oThis.attr('disabled', true);*/
 
             $.get('video_info.php', {url: url}, function (data) {
 
