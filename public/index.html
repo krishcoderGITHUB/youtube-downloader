@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>youtube-downloader</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
+y<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>youtube-downloader</title><script src="js/3.4.1-jquery.min.js"></script></head><body>
 
 <h1>YouTube Downloader</h1>
 
@@ -14,22 +8,13 @@
 </p>
 
 <form>
-    <input type="text" value="https://www.youtube.com/watch?v=aqz-KE-bpKQ" size="80" id="txt_url">
-    <input type="button" id="btn_fetch" value="Fetch">
-</form>
+    <input type="text" value="https://www.youtube.com/watch?v=aqz-KE-bpKQ" size="80" id="txt_url"><input type="button" id="btn_fetch" value="Fetch"></form>
 
-<video width="800" height="600" controls>
-    <source src="" type="video/mp4"/>
-    <em>Sorry, your browser doesn't support HTML5 video.</em>
-</video>
-
-
-<script>
+<video width="800" height="600" controls><source src="" type="video/mp4"></source><em>Sorry, your browser doesn't support HTML5 video.</em>
+</video><script>
     $(function () {
 
-
-       
-
+        $("#btn_fetch").click(function () {
 
             var url = $("#txt_url").val();
 
@@ -69,9 +54,5 @@
 
         });
 
-   
-</script>
-
-</body>
-</html>
-
+    });
+</script></body></html>
